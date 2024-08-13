@@ -1,0 +1,41 @@
+body
+{
+    background-color: rgb(55, 75, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:10%;
+}
+.FormBody
+{
+    background-color: rgb(245, 245, 245);
+    width:25%;
+    height:500px;
+    border-radius:10px;
+    box-shadow: 10px 5px 5px rgb(131, 130, 130);
+    padding-top: 15px;
+}
+.InputDetails
+{
+    display: flex;
+    width:90%;
+    margin-left: 15px;
+    margin-bottom: 10%;
+    border-radius: 5px;
+}
+label
+{
+    margin-left: 15px;
+}
+button
+{
+padding-left: 40%;
+background-color: black;
+color:rgb(255, 255, 255);
+border-radius: 5px;
+}
+button:hover
+{
+background-color: rgb(236, 82, 82);
+color:rgb(224, 210, 66);
+}
