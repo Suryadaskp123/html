@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="HtmlCssSample.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sample Form</title>
 </head>
 
-<body>
-    <nav>
+<body class="main-body">
+    <nav role="navigation" class="navigation-bar">
         <picture class="logo">
-            <img src="./images.png" alt="site logo">
+            <img src="./images.png" alt="figma logo" class="webpage-main-logo">
         </picture>
-        <div>
-            <p>Pricing</p>
-            <p>Solutions</p>
-            <p>Community</p>
-            <p>Resources</p>
-            <p>Contact</p>
-            <section class="buttons">
+        <div class="navigation-element">
+            <ul class="navigation-links">
+               <li class="navigation-links-element">Pricing</li>
+               <li class="navigation-links-element">Solutions</li>
+               <li class="navigation-links-element">Community</li>
+               <li class="navigation-links-element">Resources</li>
+               <li class="navigation-links-element">Contact</li>
+            </ul>
+            <section class="navigation-bar-buttons">
                 <button class="btn-sign-in">Sign in</button>
                 <button class="btn-register">Register</button>
             </section>
-
         </div>
     </nav>
-    <main>
-        <header>
+    <main class="main-contents">
+        <header class="headings">
             <div class="html-heading">
                 HTML
             </div>
@@ -35,91 +36,76 @@
             </div>
         </header>
         <section class="form-body">
-            <form>
-                <label for="Name">Name</label>
-
-                <input type="Text" id="Name" name="Name" placeholder="Name" class="input-details"
-                    aria-label="Enter the Name">
-
-                <label for="UserName">User Name</label>
-
-                <input type="text" id="UserName" name="UserName" placeholder="User Name" class="input-details"
-                    aria-label="Enter the Username">
-
-                <label for="Password">Password</label>
-
-                <input type="password" id="Password" name="Password" placeholder="Password" class="input-details"
-                    aria-label="Enter the Password">
-
-                <label for="PasswordHint">Password Hint</label>
-
-                <textarea placeholder="Password Hint" id="PasswordHint" name="PasswordHint" class="input-details"
-                    rows="5" cols="24"></textarea>
-
-                <button class="btn-submit-details" type="submit" aria-label="Submit Button">Submit</button>
-            </form>
+                <form>
+                    <fieldset class="form-outline">
+                        <label for="Name" class="form-label">Name</label>
+                        
+                        <input type="Text" id="Name" name="Name" placeholder="Name" class="input-details" aria-label="Enter the Name">
+                        
+                        <label for="UserName" class="form-label">User Name</label>
+                        
+                        <input type="text" id="UserName" name="UserName" placeholder="User Name" class="input-details"
+                            aria-label="Enter the Username">
+                        
+                        <label for="Password" class="form-label">Password</label>
+                        
+                        <input type="password" id="Password" name="Password" placeholder="Password" class="input-details"
+                            aria-label="Enter the Password">
+                        
+                        <label for="PasswordHint" class="form-label">Password Hint</label>
+                        
+                        <textarea placeholder="Password Hint" id="PasswordHint" name="PasswordHint" class="input-details" rows="5"
+                            cols="24"></textarea>
+                       
+                        <button class="btn-submit-details" type="submit" aria-label="Submit Button">Submit</button>
+                    </fieldset>
+                </form>
         </section>
-        <footer>
-            <div class="footer-main-logo-section">
-                <img src="./images.png" alt="site logo" class="site-footer-logo">
-                <div class="link-logos-section">
-                    <img src="./x.png" alt="x link" class="footer-link-logos">
-                    <img src="./instsgram.png" alt="instagram link" class="footer-link-logos">
-                    <img src="./youtube.png" alt="youtube link" class="footer-link-logos">
-                    <img src="./linkedin.png" alt="linkedin link" class="footer-link-logos">
-                </div>
-
-            </div>
-            <table>
-                <tr>
-                    <td>
-                        <h4>Use Case</h6>
-                    </td>
-                    <td>
-                        <h4>Explore</h6>
-                    </td>
-                    <td>
-                        <h4>Resources</h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td><a href="#">UI Design</a></td>
-                    <td><a href="#">Design</a></td>
-                    <td><a href="#">Blog</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">UX Design</a></td>
-                    <td><a href="#">Prototyping</a></td>
-                    <td><a href="#">Best Practices</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Wireframing</a></td>
-                    <td><a href="#">Development Features</a></td>
-                    <td><a href="#">Colors</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Digramming</a></td>
-                    <td><a href="#">Design Systems</a></td>
-                    <td><a href="#">Colorwheel</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Brainstorming</a></td>
-                    <td><a href="#">Collaboration Features</a></td>
-                    <td><a href="#">Colorwheel</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Online Whiteboard</a></td>
-                    <td><a href="#">Design Process</a></td>
-                    <td><a href="#">Developers</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Team Collaboration</a></td>
-                    <td><a href="#">FigJam</a></td>
-                    <td><a href="#">Resource Library</a></td>
-                </tr>
-            </table>
+        <footer class="footer-box">
+            <fieldset class="footer-contents">
+                <section class="link-logo-section">
+                    <div class="footer-main-logo-section">
+                        <img src="./images.png" alt="figma logo" class="site-footer-logo">
+                        <div class="link-logos">
+                            <img src="./x.png" alt="x link" class="footer-link-logos">
+                            <img src="./instsgram.png" alt="instagram link" class="footer-link-logos">
+                            <img src="./youtube.png" alt="youtube link" class="footer-link-logos">
+                            <img src="./linkedin.png" alt="linkedin link" class="footer-link-logos">
+                        </div>
+                    </div>
+                </section>
+                <section class="use-case">
+                    <li class="feature-list"><h4>Use Case</h4></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">UI Design</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">UX Design</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Wireframing</a</li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Digramming</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Brainstorming</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Online Whiteboard</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Team Collaboration</a></li>
+                </section>
+                <section class="explore">
+                    <li class="feature-list"><h4>Explore</h4></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Design</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Prototyping</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Development Features</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Design Systems</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Collaboration Features</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Design Process</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">FigJam</a></li>
+                </section>
+                <section class="Resources">
+                    <li class="feature-list"><h4>Resources</h4></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Blog</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Best Practices</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Colors</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Colorwheel</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Support</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Developers</a></li>
+                    <li  class="feature-list"><a href="#" class="footer-links">Resource Library</a></li>
+                </section>
+            </fieldset>
         </footer>
     </main>
 </body>
-
 </html>

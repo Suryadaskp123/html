@@ -1,13 +1,14 @@
-body {
+.main-body {
     background-color: rgb(35, 56, 76);
     display: flex;
     margin: 0;
 }
 
-nav {
+.navigation-bar {
     position: fixed;
+    justify-content: space-between;
     background-color: white;
-    height: 10%;
+    height: 7%;
     width: 100%;
     display: flex;
 }
@@ -21,40 +22,48 @@ nav {
     height: 50%;
 }
 
-img {
+.webpage-main-logo {
     height: 100%;
 }
 
-div {
+.navigation-element {
     display: inline-flex;
     justify-content: space-evenly;
     width: 60%;
     height: 100%;
-    padding-left: 40%;
 }
 
-p {
+.navigation-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
     margin-top: 2%;
+    width: 65%;
     height: 30%;
 }
-
-p:hover {
+.navigation-links-element
+{
+    display: inline-block;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.navigation-links-element:hover {
     background-color: rgb(235, 233, 233);
     cursor: pointer;
 }
 
-.buttons {
+.navigation-bar-buttons {
     margin-top: 2%;
+    width:20%;
+    display: inline;
 }
 
 .btn-sign-in {
     border-radius: 5px;
-    height: 35%;
 }
 
 .btn-register {
     border-radius: 5px;
-    height: 35%;
     background-color: black;
     color: white;
 }
@@ -66,32 +75,31 @@ p:hover {
 .btn-register:hover {
     cursor: pointer;
 }
-
-.html-heading {
-    font-size: 300%;
-    color: white;
+.main-contents {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
-
-.css-heading {
-    font-size: 200%;
-    color: white;
-}
-
-main {
+.headings {
+    padding-left: 1%;
+    padding-bottom: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 15%;
-    width: 100%;
-    height: 100%;
 }
 
-header {
-    margin-right: 3%;
-    margin-bottom: 2%;
+.html-heading {
+    font-size: 4em;
+    color: white;
 }
-
+.css-heading {
+    font-size: 3em;
+    color: white;
+}
 .form-body {
     background-color: rgb(245, 245, 245);
     width: 20%;
@@ -100,22 +108,20 @@ header {
     box-shadow: 10px 5px 5px rgb(131, 130, 130);
     padding-top: 1%;
 }
-
+.form-outline {
+    border: 0;
+}
 .input-details {
     display: flex;
     width: 90%;
     margin-left: 3%;
     margin-bottom: 10%;
     border-radius: 5px;
-}
-
-input {
     padding-top: 3%;
     padding-bottom: 3%;
 }
-
-label {
-    margin-left: 15px;
+.form-label {
+    margin-left: 2%;
 }
 
 .btn-submit-details {
@@ -136,15 +142,15 @@ label {
     cursor: pointer;
 }
 
-footer {
+ .footer-box {
     position: static;
     background-color: rgb(255, 255, 255);
     margin-top: 2%;
     width: 100%;
-    padding-bottom: 20%;
+    padding-bottom: 5%;
     display: inline-flex;
     justify-content: space-between;
-}
+} 
 
 .footer-main-logo-section {
     display: flex;
@@ -154,7 +160,7 @@ footer {
     width: 20%;
 }
 
-.link-logos-section {
+.link-logos {
     display: flex;
     flex-direction: row;
     margin-top: 5%;
@@ -163,26 +169,31 @@ footer {
 }
 
 .site-footer-logo {
-    height: 10%;
-    width: 10%;
+    height: 30px;
+    width: 30px;
 }
 
 .footer-link-logos {
-    height: 50%;
-    width: 50%;
+    height: 2em;
+    width: 2em;
 }
-
-table {
+.link-logo-section
+{
     margin-top: 2%;
     margin-left: 2%;
-    width: 100%;
 }
-
-tr {
-    width: 25%;
-}
-
-a {
+.footer-links {
     text-decoration: none;
     color: black;
+}
+.footer-contents
+{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    border: 0;
+}
+.feature-list
+{
+    list-style-type: none;
 }
