@@ -1,0 +1,1 @@
+//lattitude:string,longitude:string,humidity:number,pressure:number
