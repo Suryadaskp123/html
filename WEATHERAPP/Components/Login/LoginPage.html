@@ -1,2 +1,31 @@
 <!DOCTYPE html>
-<head>Login Page of the weather app</head>
+<html>
+    <head lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>WEATHER APP</title>
+    <link rel="stylesheet" href="LoginPage.css">
+    </head>
+    <body>
+        <div class="background">
+            <header class="app-header">WEATHER APP</header>
+            <main class="main-contents">
+                <img src="../../Assets/weather.png" alt="Weather image" class="weather-image">
+                <section class="login-form">
+                    <section class="input-section">
+                        <label for="username" class="input-label">Username</label>
+                        <input type="text" class="input-fields" name="username" id="username" placeholder="Username" aria-label="username" required>
+                    </section>
+                    <section class="input-section">
+                        <label for="password" class="input-label">Password</label>
+                        <input type="password" class="input-fields" name="password" id="password" placeholder="Password" aria-label="password" required>
+                    </section>
+                    <section class="buttons-section">
+                        <button class="navigating-button" id="sign-in">Sign In</button>
+                        <button class="navigating-button" id="sign-up">Sign UP</button>
+                    </section>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
