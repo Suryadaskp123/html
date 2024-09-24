@@ -1,0 +1,6 @@
+:root {
+  --text-color: rgba(255, 255, 255, 1);
+  --error-warning: rgb(237, 217, 61);
+  --form-background: rgba(132, 95, 95, 1);
+  --signup-color: rgba(44, 44, 44, 1);
+}
