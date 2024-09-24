@@ -1,0 +1,144 @@
+@import url("../../Assets/Colors.css");
+
+body {
+  margin: 0;
+}
+.background {
+  height: 100vh;
+  background-image: url("../../Assets/L&D-BG\ 4.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-size: cover;
+  background-position: center;
+}
+.app-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 72px;
+  font-family: system-ui;
+}
+.main-contents {
+  display: inline-flex;
+  justify-content: space-around;
+}
+.weather-image {
+  width: 300px;
+  height: 300px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--form-background);
+  width: 300px;
+  height: 300px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+}
+.input-label {
+  color: var(--text-color);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.input-fields {
+  width: 200px;
+  height: 30px;
+  border-radius: 6px;
+}
+.error-message {
+  color: var(--error-warning);
+  font-family: system-ui;
+}
+.buttons-section {
+  width: 200px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.navigating-button {
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#sign-in {
+  background-color: var(--text-color);
+}
+#sign-up {
+  background-color: var(--signup-color);
+  color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    font-size: 36px;
+  }
+
+  .main-contents {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  .weather-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .login-form {
+    width: 150px;
+    height: 150px;
+  }
+  .input-fields {
+    width: 100px;
+    height: 15px;
+  }
+
+  .buttons-section {
+    width: 100px;
+  }
+
+  .navigating-button {
+    height: 15px;
+    width: 45px;
+    font-size: 7px;
+  }
+}
+@media (max-width: 1280px) and (max-height: 720px) {
+  .app-header {
+    font-size: 60px;
+  }
+
+  .main-contents {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  .weather-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .login-form {
+    width: 200px;
+    height: 200px;
+  }
+
+  .input-fields {
+    width: 150px;
+    height: 20px;
+  }
+
+  .buttons-section {
+    width: 100px;
+  }
+
+  .navigating-button {
+    height: 20px;
+    width: 48px;
+    font-size: 8px;
+  }
+}
