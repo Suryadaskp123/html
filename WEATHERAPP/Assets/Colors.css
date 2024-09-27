@@ -3,4 +3,11 @@
   --error-warning: rgb(237, 217, 61);
   --form-background: rgba(132, 95, 95, 1);
   --signup-color: rgba(44, 44, 44, 1);
+  --search-color: rgba(44, 44, 44, 1);
+  --recent-search: rgba(30, 30, 30, 1);
+  --available-forecast: rgba(117, 117, 117, 1);
+  --navigation-bar: rgba(217, 217, 217, 1);
+  --username: rgba(117, 117, 117, 1);
+  --main-color: rgba(255, 255, 255, 1);
+  --district-section: rgba(217, 217, 217, 1);
 }

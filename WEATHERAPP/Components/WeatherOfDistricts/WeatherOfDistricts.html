@@ -1,2 +1,33 @@
 <!DOCTYPE html>
-<head>displaying the weather of psrticular district</head>
+<html>
+  <head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="./WeatherOfDistricts.css" />
+    <script src="./WeatherOfDistricts.js" async></script>
+  </head>
+  <body>
+    <div class="weatherapp-background">
+      <section class="cityDetails-container">
+        <main class="weather-detailsContainer">
+          <img class="weather-image" />
+          <section class="weather-details">
+            <section class="city-details">
+              <header class="city-name"></header>
+              <header class="forecast-detailsHeading">Forecast Details</header>
+            </section>
+            <section class="weather-metrics">
+              <div class="weather-properties" id="latitude"></div>
+              <div class="weather-properties" id="longitude"></div>
+              <div class="weather-properties" id="humidity"></div>
+              <div class="weather-properties" id="pressure"></div>
+              <div class="weather-properties" id="temperature"></div>
+            </section>
+             <button class="search-again" onclick="goToSearch()">Search Again</button>
+          </section>
+        </main>
+      </section>
+    </div>
+  </body>
+</html>

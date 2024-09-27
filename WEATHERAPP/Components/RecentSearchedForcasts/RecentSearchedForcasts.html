@@ -1,2 +1,36 @@
 <!DOCTYPE html>
-<head>display the recent searched forcasts</head>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="./RecentSearchedForcasts.css" />
+    <script src="./RecentSearchedForcasts.js" async></script>
+  </head>
+  <body>
+    <div class="weatherapp-background">
+      <section class="searchCity-background">
+        <main class="search-container">
+          <form class="citySearch-form" onsubmit="preventDefaultFunction(event)">
+            <section class="input-section">
+              <label for="city-name" class="city-label">City</label>
+              <input
+                type="text"
+                class="city-search"
+                id="city-name"
+                name="city-name"
+                placeholder="City Name"
+                aria-label="Enter city name"
+              />
+            </section>
+            <section class="search-buttonSection">
+              <button class="search-cityButton"  id="cancel-button" type="reset">Cancel</button>
+              <button class="search-cityButton" id="search-button" type="submit" onclick="searchCity()">Search</button>
+            </section>
+            <div id="search-error"></div>
+          </form>
+        </main>
+      </section>
+    </div>
+  </body>
+</html>

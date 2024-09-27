@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <title>WEATHER APP</title>
-    <link rel="stylesheet" href="LoginPage.css">
-    </head>
-    <body>
-        <div class="background">
-            <header class="app-header">WEATHER APP</header>
-            <main class="main-contents">
-                <img src="../../Assets/weather.png" alt="Weather image" class="weather-image">
-                <section class="login-form">
-                    <section class="input-section">
-                        <label for="username" class="input-label">Username</label>
-                        <input type="text" class="input-fields" name="username" id="username" placeholder="Username" aria-label="username" required>
-                    </section>
-                    <section class="input-section">
-                        <label for="password" class="input-label">Password</label>
-                        <input type="password" class="input-fields" name="password" id="password" placeholder="Password" aria-label="password" required>
-                    </section>
-                    <section class="buttons-section">
-                        <button class="navigating-button" id="sign-in">Sign In</button>
-                        <button class="navigating-button" id="sign-up">Sign UP</button>
-                    </section>
-                </section>
-            </main>
-        </div>
-    </body>
+  <head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="LoginPage.css" />
+  </head>
+  <body>
+    <div class="background">
+      <header class="app-header">WEATHER APP</header>
+      <main class="main-contents">
+        <img
+          src="../../Assets/weather.png"
+          alt="Weather image"
+          class="weather-image"
+        />
+        <form class="login-form" onsubmit="preventDefaultFunction(event)">
+          <section class="input-section">
+            <label for="username" class="input-label">Username</label>
+            <input
+              type="text"
+              class="input-fields"
+              name="username"
+              id="username"
+              placeholder="Username"
+              aria-label="username"
+              required
+            />
+            <div class="error-message" id="username-errorMessage"></div>
+          </section>
+          <section class="input-section">
+            <label for="password" class="input-label">Password</label>
+            <input
+              type="password"
+              class="input-fields"
+              name="password"
+              id="password"
+              placeholder="Password"
+              aria-label="password"
+              required
+            />
+            <div class="error-message" id="password-errorMessage"></div>
+          </section>
+          <section class="buttons-section">
+            <button
+              class="navigating-button"
+              id="sign-in"
+              onclick="signIn()"
+              type="submit"
+            >
+              Sign In
+            </button>
+            <button
+              class="navigating-button"
+              id="sign-up"
+              onclick="goToSignUp()"
+            >
+              Sign UP
+            </button>
+          </section>
+          <div class="error-message" id="credential-error"></div>
+        </form>
+      </main>
+    </div>
+    <script src="LoginPage.js"></script>
+  </body>
 </html>
