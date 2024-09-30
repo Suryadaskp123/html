@@ -1,2 +1,30 @@
 <!DOCTYPE html>
-<head>home page of the weather app for displaying weather of districts</head>
+<html lang="en">
+  <head>
+    <title>WEATHER APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./HomePage.css" />
+    <script src="HomePage.js" async></script>
+
+    <!-- <link rel="stylesheet" href="../../Components/NavigationBar/NavigationBar.css"/> -->
+  </head>
+  <body>
+    
+    <section class="background">
+      <nav class="navigation-bar"></nav>
+      <main class="application-container">
+        <div class="forecast-searchHeader">
+          <header class="searchedForecast-header">
+            <section class="searched-forecast">
+              Recent Searched Forecasts
+            </section>
+            <section class="available-forecasts">Available Forecasts</section>
+          </header>
+          <button class="search-forecastButton" onclick="goToRecentSearch()">Search</button>
+        </div>
+        <section class="searched-district"></section>
+      </main>
+    </section>
+  </body>
+</html>
